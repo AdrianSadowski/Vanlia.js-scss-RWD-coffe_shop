@@ -1,6 +1,7 @@
 import { select, classNames } from './settings.js';
 
 // TO DO LIST:
+//   handlebard nie działa !!! :)
 //   dodanie wyświetlania <h1>
 //   dodanie aby widać było {{names}}
 //   ustawienie wszystkiego
