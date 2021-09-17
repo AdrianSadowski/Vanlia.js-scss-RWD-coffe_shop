@@ -120,19 +120,25 @@ header {
     font-size: 70px;
   }
 }
+
 @media (min-width: 768px) {
   .main-text h1 {
     font-size: 76px;
   }
 }
+
 @media (min-width: 992px) {
   .main-text h1 {
     font-size: 100px;
   }
 }
-@media (min-width: 1200px) {
 
+@media (min-width: 1200px) {
+  .main-text h1 {
+    font-size: 100px;
+  }
 }
+
 @media (min-width: 1400px) {
   .main-text h1 {
     font-size: 150px;

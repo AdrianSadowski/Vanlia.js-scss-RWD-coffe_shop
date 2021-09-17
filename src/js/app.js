@@ -1,8 +1,8 @@
 import { select, classNames } from './settings.js';
 
 // TO DO LIST:
-//   handlebard nie działa !!! :)
 //   dodanie wyświetlania <h1>
+//   handlebard nie działa !!! :)
 //   dodanie aby widać było {{names}}
 //   ustawienie wszystkiego
 
@@ -58,6 +58,8 @@ const app = {
     }
   
   },
+
+
 
   init: function() {
     const thisApp = this;
