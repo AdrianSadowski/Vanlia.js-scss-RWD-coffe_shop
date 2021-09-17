@@ -1,6 +1,6 @@
 
 export const select = {
-  templateof: {
+  templateOf: {
     homeWidget: '#template-home-widget',
     productList: '#template-products-widget',
     contactList: '#template-contact-widget',
@@ -32,8 +32,8 @@ export const settings = {
   }
 };
 
-// export const templates = {
-//   homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
-//   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.productList).innerHTML),
-//   contactList: Handlebars.compile(document.querySelector(select.templateOf.contactList).innerHTML),
-// };
+export const templates = {
+  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
+  menuProduct: Handlebars.compile(document.querySelector(select.templateOf.productList).innerHTML),
+  contactList: Handlebars.compile(document.querySelector(select.templateOf.contactList).innerHTML),
+};

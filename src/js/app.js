@@ -1,3 +1,5 @@
+import Home from './Home.js';
+import Product from './Product.js';
 import { select, classNames, settings } from './settings.js';
 
 // TO DO LIST:
@@ -66,14 +68,23 @@ const app = {
     const url = settings.db.url + '/' + settings.db.products;
 
     fetch(url)
-      .then((rawResponse) => {
+      .then(function(rawResponse){
         return rawResponse.json();
       })
-      .then((parsedResponse) => {
-        this.data.products = parsedResponse;
+      .then(function(parsedResponse){
+        thisApp.data.products = parsedResponse;
+        thisApp.initMenu();
       });
   },
 
+  initMenu: function(){
+    const thisApp = this;
+
+    for(let productData in thisApp.data.products){
+      new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
+    }
+
+  },
 
 
   init: function() {
@@ -81,7 +92,15 @@ const app = {
 
     thisApp.initPages();
     thisApp.initData();
+    thisApp.initMenu();
   },
+
+  initHome: function(){
+    const thisApp = this;
+
+    const homeWidget = document.querySelector(select.containerOf.home);
+    thisApp.home = new Home(homeWidget);
+  }
 };
 
 app.init ();
