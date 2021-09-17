@@ -1,4 +1,4 @@
-import { select, classNames } from './settings.js';
+import { select, classNames, settings } from './settings.js';
 
 // TO DO LIST:
 //   dodanie wyświetlania <h1>
@@ -59,12 +59,28 @@ const app = {
   
   },
 
+  initData: function(){
+    const thisApp = this;
+
+    thisApp.data = {};
+    const url = settings.db.url + '/' + settings.db.products;
+
+    fetch(url)
+      .then((rawResponse) => {
+        return rawResponse.json();
+      })
+      .then((parsedResponse) => {
+        this.data.products = parsedResponse;
+      });
+  },
+
 
 
   init: function() {
     const thisApp = this;
 
     thisApp.initPages();
+    thisApp.initData();
   },
 };
 
