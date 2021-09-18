@@ -1,3 +1,4 @@
+import Contact from './contact.js';
 import Home from './Home.js';
 import Product from './Product.js';
 import { select, classNames, settings } from './settings.js';
@@ -86,6 +87,27 @@ const app = {
 
   },
 
+  initHome: function(){
+    const thisApp = this;
+
+    const homeWidget = document.querySelector(select.containerOf.home);
+    thisApp.home = new Home(homeWidget);
+  },
+
+  initContact: function(){
+    const thisApp = this;
+
+    const contactWidget = document.querySelector(select.containerOf.contact);
+    thisApp.contact = new Contact(contactWidget);
+
+  },
+
+  // initProduct: function(){
+  //   const thisApp = this;
+
+  //   const productList = document.querySelector(select.containerOf.menu);
+  //   thisApp.menu = new Product(productList);
+  // },
 
   init: function() {
     const thisApp = this;
@@ -93,14 +115,11 @@ const app = {
     thisApp.initPages();
     thisApp.initData();
     thisApp.initMenu();
+    thisApp.initHome();
+    thisApp.initContact();
   },
 
-  initHome: function(){
-    const thisApp = this;
 
-    const homeWidget = document.querySelector(select.containerOf.home);
-    thisApp.home = new Home(homeWidget);
-  }
 };
 
 app.init ();

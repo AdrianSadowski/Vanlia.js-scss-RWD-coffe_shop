@@ -53,28 +53,91 @@
 
   <script id="template-home-widget" type="text/x-handlebars-template">
     <div class="home-widget">
-      <h1>HOME</h1>
+      <div class="title">
+        <h2>HOME</h2>
+      </div>
     </div>
   </script>
 
   <script id="template-products-widget" type="text/x-handlebars-template">
     <div class="product-widget container">
       <div class="product row">
-        <div class="col">
-          <h3>{{{ no }}} {{{ name }}}</h3>
-          <span class="description">{{{ description }}}</span>
-          
+        <div class="title"> 
+          <h2>PRODUCTS</h2> 
         </div>
-        <div class="col img">
+        <div class="col-md-5 text-left">
+          <h3 class="name">{{{ no }}} {{{ name }}}</h3>
+          <div class="row description">
+            <p class="border-top col-2"></p>
+            <span class="col-8">{{{ description }}}</span>
+          </div>
+          <div class="row">
+            <div class="col-5 specification">
+              <p>ROASTING: <span>{{{ roasting }}}</span></p>
+              <p>INTENSITY: <span>{{{ intensity }}}</span></p>
+            </div>
+            <div class="col-5">
+              {{{ most-popular }}}
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-6 images">
           {{{ images }}}
         </div>
       </div>
+
+      <div class="product row">
+        <div class="col-md-6 images">
+          {{{ images }}}
+        </div>
+        <div class="col-md-5 text-left">
+          <h3 class="name">{{{ no }}} {{{ name }}}</h3>
+          <div class="row description">
+            <p class="border-top col-2"></p>
+            <span class="col-8">{{{ description }}}</span>
+          </div>
+          <div class="row">
+            <div class="col-5 specification">
+              <p>ROASTING: <span>{{{ roasting }}}</span></p>
+              <p>INTENSITY: <span>{{{ intensity }}}</span></p>
+            </div>
+            <div class="col-5">
+              {{{ most-popular }}}
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="product row">
+        <div class="col-md-5 text-left">
+          <h3 class="name">{{{ no }}} {{{ name }}}</h3>
+          <div class="row description">
+            <p class="border-top col-2"></p>
+            <span class="col-8">{{{ description }}}</span>
+          </div>
+          <div class="row">
+            <div class="col-5 specification">
+              <p>ROASTING: <span>{{{ roasting }}}</span></p>
+              <p>INTENSITY: <span>{{{ intensity }}}</span></p>
+            </div>
+            <div class="col-5">
+              {{{ most-popular }}}
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-6 images">
+          {{{ images }}}
+        </div>
+      </div>
+
     </div>
   </script>
 
   <script id="template-contact-widget" type="text/x-handlebars-template">
     <div class="contact-widget">
-      <h1>CONTACT</h1>
+      <div class="title">
+        <h2>CONTACT</h2>
+      </div>
     </div>
   </script>
 

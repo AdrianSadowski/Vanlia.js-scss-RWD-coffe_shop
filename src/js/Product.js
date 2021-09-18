@@ -20,7 +20,7 @@ class Product {
     
     const menuContainer = document.querySelector(select.containerOf.menu);
     console.log(menuContainer);
-    menuContainer.appendChild(thisProduct.element);
+    menuContainer.append(thisProduct.element);
     
   }
 }

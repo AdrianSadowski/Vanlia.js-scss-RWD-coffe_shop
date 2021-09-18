@@ -1,5 +1,47 @@
-.img {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+
+
+.product {
+  .name {
+    font-weight: $font-weight-bold;
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+
+  .border-top {
+    border-top: 3px solid $color-gold;
+  }
+
+  .text-left {
+    padding: 0;
+    text-align: left;
+  }
+  
+  .images {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .description {
+    font-size: 15px;
+    margin: 5px 0 20px 5px;
+  }
+  
+  .specification{
+    &:first-child{
+      margin-top: 20px;
+    }
+
+    p{
+      margin: 0;
+      font-weight: $font-weight-bold;
+      font-size: 20pt;
+
+      span {
+        color: $color-gold;
+      }
+    }
+  }
 }

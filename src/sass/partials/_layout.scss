@@ -1,5 +1,21 @@
 .container {
-  max-width: 700px;
+  max-width: 1160px;
   margin: 40px auto ;
-  padding: 0 20px;
+  width: 90%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+
+
+  h2 {
+    font-size: 75px;
+    color: $color-gold;
+    border-bottom: 3px solid $color-gold;
+    max-width: 800px;
+    padding: 0 80px;
+    font-weight: $font-weight-bold;
+    
+  }
 }
