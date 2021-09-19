@@ -16,6 +16,12 @@ export const select = {
   },
 };
 
+export const titles = {
+  home: 'Home',
+  products: 'Product',
+  contact: 'Contact'
+};
+
 export const classNames = {
   nav: {
     active: 'active',

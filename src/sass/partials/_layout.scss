@@ -3,6 +3,13 @@
   margin: 40px auto ;
   width: 90%;
 }
+section {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
 
 .title {
   display: flex;

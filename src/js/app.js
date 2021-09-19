@@ -1,7 +1,7 @@
 import Contact from './contact.js';
 import Home from './Home.js';
 import Product from './Product.js';
-import { select, classNames, settings } from './settings.js';
+import { select, classNames, settings, titles } from './settings.js';
 
 // TO DO LIST:
 //   dodanie wyświetlania <h1>
@@ -47,7 +47,9 @@ const app = {
 
   activatePage: function(pageId){
     const thisApp = this;
-
+    console.log(titles[pageId]);
+    const titleWrapper = document.querySelector('#pages .title h2');
+    titleWrapper.innerHTML = titles[pageId];
     //add class "active" to matching links
     for(let page of thisApp.pages){
       page.classList.toggle(classNames.pages.active, page.id == pageId);
@@ -80,7 +82,7 @@ const app = {
 
   initMenu: function(){
     const thisApp = this;
-
+    console.log(thisApp.data.products);
     for(let productData in thisApp.data.products){
       new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
     }

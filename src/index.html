@@ -40,8 +40,12 @@
   </header>
 
   <div id="pages">
+    <div class="title">
+      <h2>Home</h2>
+    </div>
     <section id="home">
-      <div class="home-wrapper container"></div>
+      <div class="home-wrapper container">
+      </div>
     </section>
     <section id="products">
       <div id="product-list" class="product-list container"></div>
@@ -53,61 +57,12 @@
 
   <script id="template-home-widget" type="text/x-handlebars-template">
     <div class="home-widget">
-      <div class="title">
-        <h2>HOME</h2>
-      </div>
     </div>
   </script>
 
+ 
   <script id="template-products-widget" type="text/x-handlebars-template">
     <div class="product-widget container">
-      <div class="product row">
-        <div class="title"> 
-          <h2>PRODUCTS</h2> 
-        </div>
-        <div class="col-md-5 text-left">
-          <h3 class="name">{{{ no }}} {{{ name }}}</h3>
-          <div class="row description">
-            <p class="border-top col-2"></p>
-            <span class="col-8">{{{ description }}}</span>
-          </div>
-          <div class="row">
-            <div class="col-5 specification">
-              <p>ROASTING: <span>{{{ roasting }}}</span></p>
-              <p>INTENSITY: <span>{{{ intensity }}}</span></p>
-            </div>
-            <div class="col-5">
-              {{{ most-popular }}}
-            </div>
-          </div> 
-        </div>
-        <div class="col-md-6 images">
-          {{{ images }}}
-        </div>
-      </div>
-
-      <div class="product row">
-        <div class="col-md-6 images">
-          {{{ images }}}
-        </div>
-        <div class="col-md-5 text-left">
-          <h3 class="name">{{{ no }}} {{{ name }}}</h3>
-          <div class="row description">
-            <p class="border-top col-2"></p>
-            <span class="col-8">{{{ description }}}</span>
-          </div>
-          <div class="row">
-            <div class="col-5 specification">
-              <p>ROASTING: <span>{{{ roasting }}}</span></p>
-              <p>INTENSITY: <span>{{{ intensity }}}</span></p>
-            </div>
-            <div class="col-5">
-              {{{ most-popular }}}
-            </div>
-          </div> 
-        </div>
-      </div>
-
       <div class="product row">
         <div class="col-md-5 text-left">
           <h3 class="name">{{{ no }}} {{{ name }}}</h3>
@@ -135,8 +90,19 @@
 
   <script id="template-contact-widget" type="text/x-handlebars-template">
     <div class="contact-widget">
-      <div class="title">
-        <h2>CONTACT</h2>
+      <div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Title</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
       </div>
     </div>
   </script>
