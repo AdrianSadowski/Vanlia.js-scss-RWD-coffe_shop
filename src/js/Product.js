@@ -19,7 +19,6 @@ class Product {
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
     
     const menuContainer = document.querySelector(select.containerOf.menu);
-    console.log(menuContainer);
     menuContainer.append(thisProduct.element);
     
   }

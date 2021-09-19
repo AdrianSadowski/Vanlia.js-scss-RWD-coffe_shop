@@ -61,7 +61,6 @@ const app = {
         link.getAttribute('href') == '#' + pageId
       );
     }
-  
   },
 
   initData: function(){
@@ -103,13 +102,6 @@ const app = {
     thisApp.contact = new Contact(contactWidget);
 
   },
-
-  // initProduct: function(){
-  //   const thisApp = this;
-
-  //   const productList = document.querySelector(select.containerOf.menu);
-  //   thisApp.menu = new Product(productList);
-  // },
 
   init: function() {
     const thisApp = this;
