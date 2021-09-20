@@ -23,7 +23,7 @@
           <p>VENEZUELA COFFEE BEANS</p>
         </div>
         <div class="main-nav">
-          <a href="#home">HOME</a>
+          <a href="#home" class="active">HOME</a>
           <a href="#products">PRODUCTS</a>
           <a href="#contact">CONTACT</a>
         </div>
@@ -41,7 +41,7 @@
 
   <div id="pages">
     <div class="title">
-      <h2>Home</h2>
+      <h2></h2>
     </div>
     <section id="home">
       <div class="home-wrapper container">
@@ -109,20 +109,14 @@
 
   <script id="template-contact-widget" type="text/x-handlebars-template">
     <div class="contact-widget">
-      <div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Name</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Title</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </div>
+      <form action="mailto:sadow.adrian@gmail.com" method="post" enctype="text/plain">
+        <label for="name">NAME</label><br>
+        <input type="text" id="name" name="name" ><br>
+        <label for="title">TITLE</label><br>
+        <input type="text" id="title" name="title"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
     </div>
   </script>
 
