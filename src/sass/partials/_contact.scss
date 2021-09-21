@@ -18,17 +18,17 @@
       border: 5px solid $color-dark;
       min-width: 575px;
       max-width: 575px;
-      min-height:72px;
-      max-height:72px;
+      min-height: 72px;
+      max-height: 72px;
     }
 
     textarea {
       border: 5px solid $color-dark;
-      clear:left;
+      clear: left;
       min-width: 575px;
       max-width: 575px;
-      min-height:150px;
-      max-height:150px;
+      min-height: 150px;
+      max-height: 150px;
       resize: none;
     }
 
@@ -39,6 +39,7 @@
       width: 240px;
       height: 80px;
       margin: 40px 0;
+      
       &:hover{
         transition-duration: 3s;
         transform: scale(1.2);
