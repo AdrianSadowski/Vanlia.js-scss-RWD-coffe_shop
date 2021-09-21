@@ -41,7 +41,7 @@
 
   <div id="pages">
     <div class="title">
-      <h2></h2>
+      <h2>Title</h2>
     </div>
     <section id="home">
       <div class="home-wrapper container">
@@ -109,12 +109,22 @@
 
   <script id="template-contact-widget" type="text/x-handlebars-template">
     <div class="contact-widget">
-      <form action="mailto:sadow.adrian@gmail.com" method="post" enctype="text/plain">
-        <label for="name">NAME</label><br>
-        <input type="text" id="name" name="name" ><br>
-        <label for="title">TITLE</label><br>
-        <input type="text" id="title" name="title"><br><br>
-        <input type="submit" value="Submit">
+      <form class="form" action="mailto:sadow.adrian@gmail.com" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label for="filed-name">NAME</label><br>
+          <input type="text" name="name" required id="filed-name">
+        </div>
+        <div class="form-row">
+          <label for="filed-name">TITLE</label><br>
+          <input type="text" name="title" required id="filed-title" >
+        </div>
+        <div class="form-row">
+          <label for="field-message" class="field-message">MESSAGE</label>
+          <textarea name="message" required id="field-message"></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </div>
       </form>
 
     </div>
