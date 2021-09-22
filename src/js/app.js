@@ -48,7 +48,6 @@ const app = {
 
   activatePage: function(pageId){
     const thisApp = this;
-    console.log(titles[pageId]);
     const titleWrapper = document.querySelector('#pages .title h2');
 
     titleWrapper.innerHTML = titles[pageId];
@@ -56,7 +55,6 @@ const app = {
     for(let page of thisApp.pages){
       page.classList.toggle(classNames.pages.active, page.id == pageId);
     }
-    console.log(thisApp.pages);
 
     for (let link of thisApp.navLinks){
       link.classList.toggle(
@@ -94,7 +92,7 @@ const app = {
     const thisApp = this;
 
     const homeWidget = document.querySelector(select.containerOf.home);
-    thisApp.home = new Home(homeWidget);
+    thisApp.home = new Home(homeWidget) + new Product(thisApp.data.products);
   },
 
   initContact: function(){

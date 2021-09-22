@@ -17,9 +17,9 @@ export const select = {
 };
 
 export const titles = {
-  home: 'Home',
-  products: 'Product',
-  contact: 'Contact'
+  home: 'PRODUCTS',
+  products: 'PRODUCTS',
+  contact: 'CONTACT US'
 };
 
 export const classNames = {
