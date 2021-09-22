@@ -11,6 +11,7 @@ class Contact {
     const thisContact = this;
 
     const generatedHTML = templates.contactList();
+  
 
     thisContact.dom = {};
     thisContact.dom.wrapper = element;
