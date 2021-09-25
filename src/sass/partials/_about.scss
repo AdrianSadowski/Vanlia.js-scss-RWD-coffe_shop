@@ -32,8 +32,15 @@
     font-style: italic;
     font-size: 40px;
     text-align: left;
-    max-width: 971px;
+    max-width: 70vh;
     max-height: 492px;
     width: 70%;
+
+  }
+}
+
+@media (max-width: 783px) {
+  .who {
+    font-size: 25px;
   }
 }
