@@ -8,10 +8,10 @@
   display: block;
 }
 
-@media (max-width: 1200px) {
-  .main-text h1 {
-    font-size: 70px;
-  }
+@media only screen and  (max-width: 1200px) {
+  // .main-text h1 {
+  //   font-size: 70px;
+  // }
 
   .who p {
     font-size: 40px;
@@ -20,7 +20,7 @@
 
 }
 
-@media (max-width: 783px) {
+@media only screen and (max-width: 783px) {
   .main-text h1 {
     font-size: 50px;
   }
@@ -75,9 +75,9 @@
 }
 
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   .main-text h1 {
-    font-size: 36px;
+    font-size: 70px;
     
   }
 

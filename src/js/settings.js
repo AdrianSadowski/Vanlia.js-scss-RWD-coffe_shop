@@ -1,9 +1,9 @@
 
 export const select = {
   templateOf: {
-    homeWidget: '#template-home-widget',
+  //   homeWidget: '#template-home-widget',
     productList: '#template-products-widget',
-    contactList: '#template-contact-widget',
+  //   contactList: '#template-contact-widget',
   },
   containerOf: {
     //menu: '#product-list',
@@ -14,6 +14,12 @@ export const select = {
   nav: {
     links: '.main-nav a',
   },
+};
+
+export const article = {
+  about: '#article-about',
+  products: '#article-product',
+  contact: '#article-contact',
 };
 
 export const titles = {

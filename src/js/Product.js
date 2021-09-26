@@ -18,7 +18,7 @@ class Product {
     
 
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
-    console.log(thisProduct.element);
+    //console.log(thisProduct.element);
 
  
     const menuContainerHome = document.querySelector(select.containerOf.home);

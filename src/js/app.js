@@ -1,12 +1,51 @@
 import Product from './Product.js';
-import { settings } from './settings.js';
+import { article, classNames, select, settings } from './settings.js';
 
 
 
 const app = {
 
   initPages: function () {
-    //const thisApp = this;
+
+
+    const links = document.querySelectorAll(select.nav.links);
+
+
+    const articleAbout = document.querySelector(article.about);
+    const articleProduct = document.querySelector(article.products);
+    const articleContact = document.querySelector(article.contact);
+
+    console.log(articleAbout);
+    console.log(articleProduct);
+    console.log(articleContact);
+    console.log(links);
+    
+
+    for (let link of links) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const clickedElement = this;
+        
+        articleAbout.classList.remove(classNames.pages.active);
+        articleProduct.classList.remove(classNames.pages.active);
+        articleContact.classList.remove(classNames.pages.active);
+        
+        const href = clickedElement.getAttribute('href');
+
+        if (href == '#products') {
+          articleProduct.classList.add(classNames.pages.active);
+        } if (href == '#home') {
+          articleAbout.classList.add(classNames.pages.active);
+          articleProduct.classList.add(classNames.pages.active);
+        } if (href == '#contact') {
+          articleContact.classList.add(classNames.pages.active);
+        }
+
+
+        
+      });
+
+    }
 
   
 
@@ -52,7 +91,7 @@ const app = {
   init: function() {
     const thisApp = this;
 
-    //thisApp.initPages();
+    thisApp.initPages();
     thisApp.initData();
     thisApp.initMenu();
     //thisApp.initHome();
