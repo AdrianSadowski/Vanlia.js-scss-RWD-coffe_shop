@@ -22,7 +22,7 @@
           <h3 class="">EL TIGRE </h3>
           <p>VENEZUELA COFFEE BEANS</p>
         </div>
-        <button class="hamburger" id="hamburger">
+        <button class="hamburger" id="hamburger" type="button">
           <i class="fas fa-bars"></i>
         </button>
           <ul class="nav-ul main-nav" id="nav-ul">
@@ -30,7 +30,6 @@
             <li><a href="#products">PRODUCTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
-        
       </div>
       <div class="main-text">
         <h1 class="skill-left">HOME OF</h1>
@@ -61,20 +60,20 @@
     </section>
   </div>
 
-  <script id="template-home-widget" type="text/x-handlebars-template">
+  <article id="about">
     <div class="home-widget">
-      <img src="images/about-us.jpg">
-      <div class="title about"> 
+      <img src="images/about-us.jpg" alt=".">
+      <div class="title about">
         <h2>ABOUT US</h2>
       </div>
       <div class="who">
-        <p>Who are we? Just a bunch of friends with  a love for a good coffee and desire to create something new, something original. Our coffees reflect us – young, wild and free.  We are on the journey of new tastes...  
-          <br>
-          <br>Join us!
+        <p>Who are we? Just a bunch of friends with  a love for a good coffee and desire to create something new, something original. Our coffees reflect us – young, wild and free.  We are on the journey of new tastes...
+        <br>
+        <br>Join us!
         </p>
       </div>
     </div>
-  </script>
+  </article>
 
   <script id="template-products-widget" type="text/x-handlebars-template">
     <div class="product-widget container">
@@ -101,7 +100,8 @@
     </div>
   </script>
 
-  <script id="template-contact-widget" type="text/x-handlebars-template">
+  <article>
+  
     <div class="contact-widget">
       <form class="form" action="mailto:sadow.adrian@gmail.com" method="post" enctype="text/plain">
         <div class="form-row">
@@ -121,7 +121,9 @@
         </div>
       </form>
     </div>
-  </script>
+  
+  </article>
+
   <footer>
     <p> © 2021 EL TIGRE inc.</p>
   </footer>

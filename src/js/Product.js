@@ -19,8 +19,11 @@ class Product {
 
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
     
-    const menuContainer = document.querySelector(select.containerOf.menu);
-    menuContainer.append(thisProduct.element);
+    // const menuContainer = document.querySelector(select.containerOf.menu);
+    // menuContainer.append(thisProduct.element);
+ 
+    const menuContainerHome = document.querySelector(select.containerOf.home);
+    menuContainerHome.append(thisProduct.element);
     
   }
 }

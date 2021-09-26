@@ -39,7 +39,7 @@ export const settings = {
 };
 
 export const templates = {
-  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
+  //homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.productList).innerHTML),
-  contactList: Handlebars.compile(document.querySelector(select.templateOf.contactList).innerHTML),
+  //contactList: Handlebars.compile(document.querySelector(select.templateOf.contactList).innerHTML),
 };

@@ -2,10 +2,10 @@
   .main-text h1 {
     font-size: 70px;
   }
-  .who p {
-    font-size: 40px
-  }
 
+  .who p {
+    font-size: 40px;
+  }
 
 
 }
@@ -30,16 +30,19 @@
 
     li{
       margin: 10px 0;
+
       a {
         font-size: 40px;
         color: $color-light;
         filter: brightness(100%);
+
         &:hover {
           filter: brightness(50%);
         }
       }
     }
   }
+
   .nav-ul.show {
     display: flex;
     justify-content: space-between;
@@ -67,6 +70,7 @@
     font-size: 36px;
     
   }
+
   .title h2 {
     font-size: 30px;
   }

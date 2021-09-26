@@ -89,12 +89,12 @@ const app = {
 
   },
 
-  initHome: function(){
-    const thisApp = this;
+  // initHome: function(){
+  //   const thisApp = this;
 
-    const homeWidget = document.querySelector(select.containerOf.home);
-    thisApp.home = new Home(homeWidget);
-  },
+  //   const homeWidget = document.querySelector(select.containerOf.home);
+  //   thisApp.home = new Home(homeWidget);
+  // },
 
   initContact: function(){
     const thisApp = this;
@@ -120,8 +120,8 @@ const app = {
     thisApp.initPages();
     thisApp.initData();
     thisApp.initMenu();
-    thisApp.initHome();
-    thisApp.initContact();
+    //thisApp.initHome();
+    //thisApp.initContact();
     thisApp.initHamburger();
   },
 
