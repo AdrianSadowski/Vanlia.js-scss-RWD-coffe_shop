@@ -1,3 +1,13 @@
+.article-product,
+.article-about,
+.article-contact {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 @media (max-width: 1200px) {
   .main-text h1 {
     font-size: 70px;

@@ -6,10 +6,10 @@ export const select = {
     contactList: '#template-contact-widget',
   },
   containerOf: {
-    menu: '#product-list',
+    //menu: '#product-list',
     pages: '#pages',
     home: '.home-wrapper',
-    contact: '.contact',
+    //contact: '.contact',
   },
   nav: {
     links: '.main-nav a',

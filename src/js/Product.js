@@ -15,14 +15,14 @@ class Product {
     const thisProduct = this;
 
     const generatedHTML = templates.menuProduct(thisProduct.data);
-    //console.log(generatedHTML);
+    
 
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
-    
-    // const menuContainer = document.querySelector(select.containerOf.menu);
-    // menuContainer.append(thisProduct.element);
+    console.log(thisProduct.element);
+
  
     const menuContainerHome = document.querySelector(select.containerOf.home);
+    
     menuContainerHome.append(thisProduct.element);
     
   }

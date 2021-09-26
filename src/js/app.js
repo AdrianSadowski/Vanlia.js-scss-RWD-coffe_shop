@@ -1,69 +1,17 @@
-import Contact from './contact.js';
-import Home from './Home.js';
 import Product from './Product.js';
-import { select, classNames, settings, titles } from './settings.js';
+import { settings } from './settings.js';
 
-// TO DO LIST:
-//OTWIETANIE DOMYŚLNE HOME
-// DODANIE PRODUCTS DO HOME
 
 
 const app = {
-  initPages: function(){
-    const thisApp = this;
 
-    thisApp.pages = document.querySelector(select.containerOf.pages).children;
-    thisApp.navLinks = document.querySelectorAll(select.nav.links);
-    
-    // const idFromHash = window.location.hash.replace('#/', '');
+  initPages: function () {
+    //const thisApp = this;
 
-    let pageMatchingHash = thisApp.pages[1].id;
-    
-
-    // for (let page of thisApp.pages){
-    //   if(page.id == idFromHash){
-    //     pageMatchingHash = page.id;
-    //     break;
-    //   }
-    // }
+  
 
 
-    thisApp.activatePage(pageMatchingHash);
-
-    for (let link of thisApp.navLinks){
-      link.addEventListener('click', function(event){
-        const clickedElement = this;
-        event.preventDefault();
-
-        const id = clickedElement.getAttribute('href').replace('#', '');
-
-        thisApp.activatePage(id);
-
-        //window.location.hash = '#/' + id;
-      });
-    }
-
-    
   },
-
-  activatePage: function(pageId){
-    const thisApp = this;
-    const titleWrapper = document.querySelector('#pages .title h2');
-
-    titleWrapper.innerHTML = titles[pageId];
-    //add class "active" to matching links
-    for(let page of thisApp.pages){
-      page.classList.toggle(classNames.pages.active, page.id == pageId);
-    }
-
-    for (let link of thisApp.navLinks){
-      link.classList.toggle(
-        classNames.nav.active,
-        link.getAttribute('href') == '#' + pageId
-      );
-    }
-  },
-
 
   initData: function(){
     const thisApp = this;
@@ -89,21 +37,7 @@ const app = {
 
   },
 
-  // initHome: function(){
-  //   const thisApp = this;
-
-  //   const homeWidget = document.querySelector(select.containerOf.home);
-  //   thisApp.home = new Home(homeWidget);
-  // },
-
-  initContact: function(){
-    const thisApp = this;
-
-    const contactWidget = document.querySelector(select.containerOf.contact);
-    thisApp.contact = new Contact(contactWidget);
-
-  },
-
+ 
   initHamburger: function(){
     const hamburger = document.getElementById('hamburger');
     const navUL= document.getElementById('nav-ul');
@@ -114,10 +48,11 @@ const app = {
 
   },
 
+
   init: function() {
     const thisApp = this;
 
-    thisApp.initPages();
+    //thisApp.initPages();
     thisApp.initData();
     thisApp.initMenu();
     //thisApp.initHome();
