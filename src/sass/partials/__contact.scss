@@ -1,4 +1,8 @@
 .contact-widget {
+  .form {
+    max-height: 80%;
+  }
+
   .form-row {
     display: flex;
     flex-direction: column;

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffe Shop</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +25,11 @@
         <button class="hamburger" id="hamburger" type="button">
           <i class="fas fa-bars"></i>
         </button>
-          <ul class="nav-ul main-nav" id="nav-ul">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#products">PRODUCTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
+        <ul class="nav-ul main-nav" id="nav-ul">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#products">PRODUCTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
       </div>
       <div class="main-text">
         <h1 class="skill-left">HOME OF</h1>
@@ -52,21 +52,22 @@
       <div class="product-widget container">
         <div class="skill-right">
           <div class="skill-image">
-            {{{ images }}}
+              {{{ images }}}
           </div>
           <div class="skill-description">
-          <h3 class="name">{{{ no }}} {{{ name }}}</h3>
-          <div class="row description">
-            <p class="border-top col-2"></p>
-            <span class="col-8">{{{ description }}}</span>
-          </div>
-          <div class="row">
-            <div class="col-5 specification">
-              <p>ROASTING: <span>{{{ roasting }}}</span></p>
-              <p>INTENSITY: <span>{{{ intensity }}}</span></p>
+            <h3 class="name">{{{ no }}} {{{ name }}}</h3>
+            <div class="row description">
+              <p class="border-top col-2"></p>
+              <span class="col-8">{{{ description }}}</span>
             </div>
-            <div class="col-5">
-              {{{ most-popular }}}
+            <div class="row">
+              <div class="col-sm-5 specification">
+                <p>ROASTING: <span>{{{ roasting }}}</span></p>
+                <p>INTENSITY: <span>{{{ intensity }}}</span></p>
+              </div>
+              <div class="col-sm-5">
+                {{{ most-popular }}}
+              </div>
             </div>
           </div>
         </div>
@@ -81,9 +82,10 @@
         <h2>ABOUT US</h2>
       </div>
       <div class="who">
-        <p>Who are we? Just a bunch of friends with  a love for a good coffee and desire to create something new, something original. Our coffees reflect us – young, wild and free.  We are on the journey of new tastes...
-        <br>
-        <br>Join us!
+        <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new,
+          something original. Our coffees reflect us – young, wild and free. We are on the journey of new tastes...
+          <br>
+          <br>Join us!
         </p>
       </div>
     </div>
@@ -101,7 +103,7 @@
         </div>
         <div class="form-row">
           <label for="filed-name">TITLE</label><br>
-          <input type="text" name="title" required id="filed-title" >
+          <input type="text" name="title" required id="filed-title">
         </div>
         <div class="form-row">
           <label for="field-message" class="field-message">MESSAGE</label>
