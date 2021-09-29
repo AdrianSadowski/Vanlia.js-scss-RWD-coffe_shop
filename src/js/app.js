@@ -15,10 +15,6 @@ const app = {
     const articleProduct = document.querySelector(article.products);
     const articleContact = document.querySelector(article.contact);
 
-    console.log(articleAbout);
-    console.log(articleProduct);
-    console.log(articleContact);
-    console.log(links);
     
 
     for (let link of links) {
