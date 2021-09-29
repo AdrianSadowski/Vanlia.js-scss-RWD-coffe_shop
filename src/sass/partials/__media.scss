@@ -40,6 +40,7 @@
   .main-text h1 {
     font-size: 60px;
   }
+
   .main-text .skill-left {
     text-align: center;
   }
@@ -47,6 +48,7 @@
   .main-text .skill-right {
     text-align: center;
   }
+
   .product-widget .skill-right .skill-description {
     padding: 0;
   }
@@ -59,7 +61,6 @@
   .home-wrapper {
     max-height: 3000px;
   }
-
 
 
   //button 
@@ -123,7 +124,21 @@
   }
 
   .who p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
+  .home-widget .who {
+    margin-top: 60px;
+  }
+
+  .product-widget .name {
+    font-size: 36px;
+  }
+  
+  .product-widget .skill-right .skill-image {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+  }
 }
